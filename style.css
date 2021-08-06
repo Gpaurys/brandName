@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.main-container {
+    display: block;
+    width: 100%;
+}
+
+.box {
+   border: 10px solid navy;
+}
+
+.box > h1 {
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.nav {
+    background-color: tomato;
+}
+
+.nav a {
+    display: block;
+    padding-top: 30px;
+    text-decoration: none;
+    background-color:tomato;
+    color: whitesmoke;
+}
+
+.home { 
+    border-bottom: 1px solid rgb(131, 129, 129);   
+}
+
+.about {
+    border-bottom: 1px solid rgb(131, 129, 129);
+}
+
+.community {
+    border-bottom: 1px solid rgb(131, 129, 129);
+}
+
+@media only screen and (max-width: 550px) {
+    .box {
+        display: block; 
+        height: 100%;   
+    }
+}
+
+@media only screen and (min-width: 551px) {
+    .box {
+        display: flex;
+        border: 20px solid navy;
+    }
+    
+    .box > h1 {
+        flex: 1;
+        font-size: 2rem;
+        padding-top: 5px;
+    }
+    .nav {
+        display: flex;
+        width: 100%;
+        flex: 2;
+        justify-content: space-around;
+        
+    }
+    .home > a {
+        padding: 15px 20px 0px 30px;
+    }
+
+    .about > a {
+        padding: 15px 20px 0px 40px;
+    }
+
+    .community > a {
+        padding: 15px 20px 0px 30px;
+    }
+    .contacts > a {
+        padding: 15px 20px 0px 30px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .main-container {
+        background-color:violet;
+    }
+    
+    .box {
+        max-width: 993px;
+        border: 20px solid rgb(10, 83, 3);
+        margin: 0 auto;
+    }
+    
+}
